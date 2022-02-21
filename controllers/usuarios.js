@@ -71,10 +71,15 @@ const usuariosDelete = async (req, res = response) => {
 
     const {id} = req.params;
 
+    const uid = req.uid;
+
     // Fisicamente lo borramos
     const usuario = await Usuario.findByIdAndUpdate(id, {estado:false});
 
-    res.json(usuario);
+    const usuarioAutenticado = req.usuario;
+    //IMprimir Usuario Autenticado
+
+    res.json({usuario, usuarioAutenticado});
 }
 
 module.exports = {
