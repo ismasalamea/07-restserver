@@ -1,3 +1,6 @@
-# wEBSERVER + rESTSERVER
+# Webserver + Restserver
 
-rECUERDEN QUE DEBEN EJECUTAR ``ǹpm install para generar los modulos de node
+Recuerden que deben ejecutar npm install para generar los modulos de node
+
+Ismael Salamea
+Backend Junior Developer (Node.js)
