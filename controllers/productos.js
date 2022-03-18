@@ -32,7 +32,7 @@ const obtenerProducto = async (req, res = response) => {
     const { id } = req.params;
     const producto = await Producto.findById(id)                                
                                 .populate('usuario','nombre')
-//                                .populate('categoria', 'nombre')
+                                .populate('categoria', 'nombre')
     res.json (producto)
 }
 
@@ -56,7 +56,7 @@ const actualizarProducto = async (req, res = response) => {
     });
 }
 
-//Borrar Categoria () estado:false
+//Borrar Producto () estado:false
 const borrarProducto = async (req, res = response) => {
 
     const {id} = req.params;
@@ -69,7 +69,7 @@ const borrarProducto = async (req, res = response) => {
     });
 }
 
-
+//Crear Producto
 
 const crearProducto = async(req, res = response) => {
 
